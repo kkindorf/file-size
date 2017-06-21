@@ -22,7 +22,7 @@ app.post('/', upload.single('userFile'), function(req, res, next) {
     return res.json({fileSize: 'Your file size in bytes: '+ req.file.size})
   }
   else {
-    res.json({message: 'Missing File'})
+    res.json({message: 'Your file was not uploaded'})
   }
 });
 
